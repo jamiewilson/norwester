@@ -18,6 +18,23 @@ header {
   margin: 0 auto;
   padding-top: 90px; }
 
+.version {
+  background: #4D4D4E;
+  border-radius: 5em;
+  color: white;
+  font: .75em/.75 "VerbCondExtralight";
+  opacity: .3;
+  padding: 11px 10px 10px;
+  position: absolute;
+  right: 40px;
+  top: 10px;
+  transition: opacity .5s ease;
+  -webkit-transition: opacity .5s ease;
+  width: 100px;}
+  
+.version:hover {
+	opacity: 1;}
+
 h1 {
   font: 7.5rem/1 "norwester";
   text-transform: uppercase;

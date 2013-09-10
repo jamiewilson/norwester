@@ -24,13 +24,13 @@ header {
   color: white;
   font: .75em/.75 "VerbCondExtralight";
   opacity: .3;
-  padding: 11px 10px 10px;
+  padding: 12px 10px 10px 10px;
   position: absolute;
   right: 40px;
   top: 10px;
   transition: opacity .5s ease;
   -webkit-transition: opacity .5s ease;
-  width: 100px;}
+  width: 100px  ;}
   
 .version:hover {
 	opacity: 1;}

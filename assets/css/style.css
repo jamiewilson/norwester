@@ -9,11 +9,18 @@ html {
 
 body {
   color: #4D4D4E;
-  font-family: "VerbCondExtralight"; }
+  min-width: 960px;
+  font-family: "VerbCondExtralight"; 
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
 
 header {
   height: 600px;
-  background: #f4f3ef url(../img/header.jpg) no-repeat top center;
+  background: #f4f3ef url(../img/header.jpg) repeat-x top center;
   background-attachment: fixed;
   margin: 0 auto;
   padding-top: 90px; }

@@ -10,7 +10,7 @@ html {
 body {
   color: #4D4D4E;
   min-width: 960px;
-  font-family: "VerbCondExtralight"; 
+  font-family: "VerbCondExtralight";
 }
 
 .container {
@@ -38,14 +38,15 @@ header {
   transition: opacity .5s ease;
   -webkit-transition: opacity .5s ease;
   width: 100px  ;}
-  
+
 .version:hover {
 	opacity: 1;}
 
 h1 {
   font: 7.5rem/1 "norwester";
   text-transform: uppercase;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
 
 p {
   font-size: 1.5rem; }
@@ -69,7 +70,8 @@ a {
   text-transform: uppercase;
   transition: all .3s ease-in-out;
   -webkit-font-smoothing: antialiased;
-  width: auto; }
+  width: auto;
+  text-rendering: optimizeLegibility; }
 
 .btn:hover {
   background-color: #EF5829; }

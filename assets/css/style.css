@@ -1,16 +1,18 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 html {
   font: 100%;
   height: 100%;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+}
 
 body {
   color: #4D4D4E;
   min-width: 960px;
-  font-family: "VerbCondExtralight";
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
 }
 
 .container {
@@ -23,88 +25,86 @@ header {
   background: #f4f3ef url(../img/header.jpg) repeat-x top center;
   background-attachment: fixed;
   margin: 0 auto;
-  padding-top: 90px; }
+  padding-top: 90px;
+}
 
 .version {
   background: #4D4D4E;
   border-radius: 5em;
   color: white;
-  font: .75em/.75 "VerbCondExtralight";
-  opacity: .2;
-  padding: 13px 10px 10px 10px;
+  font: .75em/.75 "Source Sans Pro", Helvetica, Arial, sans-serif;
+  opacity: .25;
+  padding: 12px;
   position: absolute;
   right: 30px;
   top: 10px;
   transition: opacity .5s ease;
-  -webkit-transition: opacity .5s ease;
-  width: 100px  ;}
+  width: 100px;
+}
 
 .version:hover {
-	opacity: 1;}
+  opacity: 1;
+}
 
 h1 {
   font: 7.5rem/1 "norwester";
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+}
 
 p {
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+}
 
 a {
   text-decoration: none;
-  color: #F0835F; }
+  color: #F18260;
+}
 
 .smaller {
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+}
 
 .btn {
-  background: #F0835F;
+  background: #F18260;
   border-radius: 3px;
   color: white;
   display: inline-block;
   font: 1.5rem "norwester";
   letter-spacing: .1rem;
-  margin: 1.25rem 0 1.75rem;
+  margin: 1rem 0;
   padding: 1.5rem 3rem;
   text-transform: uppercase;
   transition: all .3s ease-in-out;
   -webkit-font-smoothing: antialiased;
   width: auto;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+}
 
 .btn:hover {
-  background-color: #EF5829; }
+  background-color: #EF5829;
+}
 
 .btn:active {
   transition: none;
-  background-color: #c54d29; }
+  background-color: #c54d29;
+}
 
 .last {
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+}
 
-/*-----------------------------
-		Fonts
------------------------------*/
-@font-face {
-  font-family: 'VerbCondExtralight';
-  src: url(../fonts/VerbCondExtralight.eot);
-  src: url(../fonts/VerbCondExtralight.eot?#iefix) format("embedded-opentype"), url(../fonts/VerbCondExtralight.woff) format("woff"), url(../fonts/VerbCondExtralight.ttf) format("truetype"); }
+.license {
+  display: block;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: #4D4D4E;
+}
 
 @font-face {
   font-family: 'norwester';
   src: url(../fonts/norwester.eot);
-  src: url(../fonts/norwester.eot?#iefix) format("embedded-opentype"), url(../fonts/norwester.woff) format("woff"), url(../fonts/norwester.ttf) format("truetype"); }
-
-/*-----------------------------
-		Highlight Color
------------------------------*/
-::-moz-selection {
-  background: #F28361;
-  color: white;
-  text-shadow: none; }
-
-::selection {
-  background: #F28361;
-  color: white;
-  text-shadow: none; }
+  src: url(../fonts/norwester.eot?#iefix) format("embedded-opentype"), url(../fonts/norwester.woff) format("woff"), url(../fonts/norwester.ttf) format("truetype");
+}

@@ -51,7 +51,6 @@ audio:not([controls]) {
   display: none;
 }
 
-
 /* =============================================================================
    Base
    ========================================================================== */
@@ -89,7 +88,6 @@ body {
   margin: 0;
 }
 
-
 /* =============================================================================
    Links
    ========================================================================== */
@@ -111,7 +109,6 @@ a:hover,
 a:active {
   outline: 0;
 }
-
 
 /* =============================================================================
    Typography
@@ -267,7 +264,6 @@ sub {
   bottom: -0.25em;
 }
 
-
 /* =============================================================================
    Lists
    ========================================================================== */
@@ -307,7 +303,6 @@ nav ol {
   list-style-image: none;
 }
 
-
 /* =============================================================================
    Embedded content
    ========================================================================== */
@@ -331,7 +326,6 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-
 /* =============================================================================
    Figures
    ========================================================================== */
@@ -343,7 +337,6 @@ svg:not(:root) {
 figure {
   margin: 0;
 }
-
 
 /* =============================================================================
    Forms
@@ -413,12 +406,12 @@ input {
  */
 
 button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
   cursor: pointer; /* 1 */
   -webkit-appearance: button; /* 2 */
-  *overflow: visible;  /* 3 */
+  *overflow: visible; /* 3 */
 }
 
 /*
@@ -437,8 +430,8 @@ input[disabled] {
     Known issue: excess padding remains in IE6
  */
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type='checkbox'],
+input[type='radio'] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
   *height: 13px; /* 3 */
@@ -450,7 +443,7 @@ input[type="radio"] {
  * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
  */
 
-input[type="search"] {
+input[type='search'] {
   -webkit-appearance: textfield; /* 1 */
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box; /* 2 */
@@ -461,8 +454,8 @@ input[type="search"] {
  * Removes inner padding and search cancel button in S5, Chrome on OS X
  */
 
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button {
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 
@@ -486,7 +479,6 @@ textarea {
   overflow: auto; /* 1 */
   vertical-align: top; /* 2 */
 }
-
 
 /* =============================================================================
    Tables
@@ -513,9 +505,20 @@ html {
 }
 
 body {
-  color: #4D4D4E;
+  color: #4d4d4e;
   min-width: 960px;
-  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+}
+
+.pro-banner {
+  display: block;
+  height: 60px;
+  background: #222;
+  color: #f18260;
+  font: 1.2rem 'norwester';
+  letter-spacing: 1px;
+  line-height: 60px;
+  text-transform: uppercase;
 }
 
 .container {
@@ -525,32 +528,26 @@ body {
 
 header {
   height: 600px;
-  background: #f4f3ef url(../img/header.jpg) repeat-x top center;
+  background: #f4f3ef url(../img/header.jpg) repeat top center;
   background-attachment: fixed;
   margin: 0 auto;
   padding-top: 90px;
+  position: relative;
 }
 
 .version {
-  background: #4D4D4E;
+  border: 2px solid #4d4d4e;
   border-radius: 5em;
-  color: white;
-  font: .75em/.75 "Source Sans Pro", Helvetica, Arial, sans-serif;
-  opacity: .25;
+  font: 0.75em/0.75 'Source Sans Pro', Helvetica, Arial, sans-serif;
   padding: 12px;
   position: absolute;
   right: 30px;
   top: 10px;
-  transition: opacity .5s ease;
   width: 100px;
 }
 
-.version:hover {
-  opacity: 1;
-}
-
 h1 {
-  font: 7.5rem/1 "norwester";
+  font: 7.5rem/1 'norwester';
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -562,7 +559,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #F18260;
+  color: #f18260;
 }
 
 .smaller {
@@ -570,23 +567,23 @@ a {
 }
 
 .btn {
-  background: #F18260;
+  background: #f18260;
   border-radius: 3px;
   color: white;
   display: inline-block;
-  font: 1.5rem "norwester";
-  letter-spacing: .1rem;
+  font: 1.5rem 'norwester';
+  letter-spacing: 0.1rem;
   margin: 1rem 0;
   padding: 1.5rem 3rem;
   text-transform: uppercase;
-  transition: background-color .3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
   -webkit-font-smoothing: antialiased;
   width: auto;
   text-rendering: optimizeLegibility;
 }
 
 .btn:hover {
-  background-color: #EF5829;
+  background-color: #ef5829;
 }
 
 .btn:active {
@@ -603,11 +600,13 @@ a {
   margin-bottom: 2rem;
   font-weight: 700;
   font-size: 0.875rem;
-  color: #4D4D4E;
+  color: #4d4d4e;
 }
 
 @font-face {
   font-family: 'norwester';
   src: url(../fonts/norwester.eot);
-  src: url(../fonts/norwester.eot?#iefix) format("embedded-opentype"), url(../fonts/norwester.woff) format("woff"), url(../fonts/norwester.ttf) format("truetype");
+  src: url(../fonts/norwester.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/norwester.woff) format('woff'),
+    url(../fonts/norwester.ttf) format('truetype');
 }
